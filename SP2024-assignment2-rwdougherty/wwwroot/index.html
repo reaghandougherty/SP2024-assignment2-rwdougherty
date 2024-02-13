@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML Elements Reference</title>
+
+
+</head>
+
+<body>
+
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+
+
+    <h1 id="search engine name">Search Engine</h1>
+
+    <input type="text" id="query" />
+
+    <button type="submit" value="search"></button>
+
+    <p>Date/Time: <span id="datetime"></span></p>
+
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+    </script>                  
+
+    <div id="search results"></div>
+    <div id="time"></div>
+
+</body>
+
+</html>
