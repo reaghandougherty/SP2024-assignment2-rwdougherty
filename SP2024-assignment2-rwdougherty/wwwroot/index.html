@@ -5,7 +5,7 @@
 <head>
 
     <link rel="stylesheet" href="./style.css">
-    <title>HTML Elements Reference</title>
+    <title>Search Engine</title>
 
 
 </head>
@@ -21,24 +21,24 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
+    <center>
 
+        <h1 id="search engine name">Search Engine</h1>
 
-    <h1 id="search engine name">Search Engine</h1>
+        <input type="text" id="query" />
 
-    <input type="text" id="query" />
+        <button type="submit" value="search"></button>
 
-    <button type="submit" value="search"></button>
+        <p>Time: <span id="datetime"></span></p>
 
-    <p>Date/Time: <span id="datetime"></span></p>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+        </script>
 
-    <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-    </script>                  
-
-    <div id="search results"></div>
-    <div id="time"></div>
-
+        <div id="search results"></div>
+        <div id="time"></div>
+    </center>
 </body>
 
 </html>
