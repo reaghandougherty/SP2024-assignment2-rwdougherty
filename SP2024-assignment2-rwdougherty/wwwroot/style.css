@@ -12,3 +12,9 @@ body {
     margin: auto;
     padding: 0;
 }
+#searchResults{
+    visibility:hidden;
+}
+#time{
+    visibility: hidden;
+}
