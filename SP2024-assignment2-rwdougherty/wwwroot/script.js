@@ -10,7 +10,7 @@ function apiSearch() {
   };
 
   $.ajax({
-      url: 'https://api.bing.microsoft.com/' + $.param(params),
+      url: 'https://api.bing.microsoft.com/v7.0/search?' + $.param(params),
       beforeSend: function (xhrObj) {
           xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "75ca58ae27f64b1297b372d02702c1ad");
       },
@@ -37,8 +37,6 @@ $("#searchBtn").click(function () {
 
 /*website background function*/
 $("#searchEngineName").click(function () {
-    function newBackground() {
-        $('body').css('background-image', 'url("background2.jpg")');
-    }
+    $('body').css('background-image', 'url("background2.jpg")');
 });
 

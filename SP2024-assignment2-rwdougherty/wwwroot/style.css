@@ -13,8 +13,8 @@ body {
     padding: 0;
 }
 #searchResults{
-    visibility:hidden;
+    visibility:visible;
 }
 #time{
-    visibility: hidden;
+    visibility: visible;
 }
