@@ -29,19 +29,16 @@ function apiSearch() {
       alert("error");
     });
 }
-$(document).ready(function () {
-    apiSearch();
 
-    $("#searchBtn").click(function () {
-        apiSearch();
-    });
+/*search button function*/
+$("#searchBtn").click(function () {
+    apiSearch();
 });
 
-$(document).ready(function () {
+/*website background function*/
+$("#searchEngineName").click(function () {
     function newBackground() {
         $('body').css('background-image', 'url("background2.jpg")');
     }
-    $('#searchEngineName').click(function () {
-        newBackground();
-    });
 });
+
