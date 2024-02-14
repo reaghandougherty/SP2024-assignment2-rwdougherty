@@ -40,3 +40,9 @@ $("#searchEngineName").click(function () {
     $('body').css('background-image', 'url("background2.jpg")');
 });
 
+/*current time function*/
+$("#currentTime").click(function () {
+    var now = moment().format("h:mm:ss A");
+    let timeNow = document.createTextNode(now);
+    alert(timeNow);
+});
