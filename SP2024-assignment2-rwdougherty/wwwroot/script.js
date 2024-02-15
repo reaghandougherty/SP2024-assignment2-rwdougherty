@@ -33,6 +33,9 @@ function apiSearch() {
 /*search button function*/
 $("#searchBtn").click(function () {
     apiSearch();
+    var searchDiv = document.getElementById("searchResults");
+    if (!searchDiv.checkVisibility()) {
+        searchDiv.visibility = visible;
 });
 
 /*website background function*/
