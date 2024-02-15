@@ -23,7 +23,14 @@ function apiSearch() {
       }
 
       $('#searchResults').html(results);
-      $('#searchResults').dialog();
+        $('#searchResults').dialog({
+            height: 400,
+            width: 600,
+            modal: true,
+            title: 'Search Results'
+
+
+        });
     })
     .fail(function () {
       alert("error");
@@ -33,9 +40,11 @@ function apiSearch() {
 /*search button function*/
 $("#searchBtn").click(function () {
     apiSearch();
-    var searchDiv = document.getElementById("searchResults");
+   /* var searchDiv = document.getElementById("searchResults");
     if (!searchDiv.checkVisibility()) {
-        searchDiv.visibility = visible;
+        document.getElementById("searchResults").style.visibility = "visible";
+        
+    }*/
 });
 
 /*website background function*/
@@ -50,4 +59,37 @@ $("#currentTime").click(function () {
     var d = new Date(); 
     datetext = d.getHours() + ":" + d.getMinutes();
     alert("The current time is " + datetext);
+
+    var timeDiv = document.getElementById("time");
+    if (!timeDiv.checkVisibility()) {
+        timeDiv.visibility = visible;
+    }
 });
+/*
+function ChangeElementResultsVibility(elementName) {
+
+    let visibilityCheck = document.getElementById(`${elementName}`).style.visibility
+
+    if (visibilityCheck == 'hidden') {
+
+        document.getElementById(`${elementName}`).style.visibility = 'visible'
+
+    } else {
+
+        document.getElementById(`${elementName}`).style.visibility = 'hidden'
+
+    }
+
+}
+
+ function QuerySearch() {
+
+    ChangeElementResultsVibility("searchResults")
+
+    apiSearch()
+
+    document.getElementById("query").value = ''
+
+    ChangeElementResultsVibility("searchResults")
+
+} */

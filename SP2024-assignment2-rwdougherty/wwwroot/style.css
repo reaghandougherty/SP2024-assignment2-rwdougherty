@@ -16,8 +16,8 @@ body {
 
 }
 #searchResults{
-    visibility:hidden;
+    visibility:visible;
 }
 #time{
-    visibility: visible;
+    visibility: hidden;
 }
