@@ -58,7 +58,16 @@ $("#currentTime").click(function () {
 
     var d = new Date(); 
     datetext = d.getHours() + ":" + d.getMinutes();
-    alert("The current time is " + datetext);
+    //alert("The current time is " + datetext);
+
+    $('#time').html(datetext);
+    $('#time').dialog({
+        height: 400,
+        width: 600,
+        modal: true,
+        title: 'Current Time',
+
+    });
 
     var timeDiv = document.getElementById("time");
     if (!timeDiv.checkVisibility()) {
